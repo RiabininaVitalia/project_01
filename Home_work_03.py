@@ -5,6 +5,7 @@
 #       * принимать новые значения, 
 #       * заменять существующие значения, 
 #       * выводить число строк и колонок.
+import pprint
 import random
 
 class Matrix:
@@ -20,7 +21,7 @@ class Matrix:
             for j in range(M):
                 array[i].append(random.randint(0,100))
                 r += 1
-        print(array)  
+        pprint.pprint(array)  
         return array    
    
     def add_matrix():
@@ -37,7 +38,7 @@ class Matrix:
                else:
                   n+=1  
         print('') 
-        print(m) 
+        pprint.pprint(m) 
 
     def change_matrix():
         """Заменить объект в матрице"""
@@ -47,7 +48,7 @@ class Matrix:
         n = int(input('Ведите новое число: '))
         m[x][y] = n
         print('В ячейке', x, y, 'элемент заменен на ', n)
-        print(m)
+        pprint.pprint(m)
 
     def size_matrix():
         """Узнать размер матрицы""" 
@@ -59,4 +60,4 @@ class Matrix:
 
 
 
-Matrix.create_matrix()
+Matrix.change_matrix()

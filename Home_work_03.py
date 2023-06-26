@@ -5,7 +5,6 @@
 #       * принимать новые значения, 
 #       * заменять существующие значения, 
 #       * выводить число строк и колонок.
-
 import random
 
 class Matrix:
@@ -21,7 +20,7 @@ class Matrix:
             for j in range(M):
                 array[i].append(random.randint(0,100))
                 r += 1
-        print(array, end = ' ')  
+        print(array)  
         return array    
    
     def add_matrix():
@@ -60,4 +59,4 @@ class Matrix:
 
 
 
-Matrix.add_matrix()
+Matrix.create_matrix()
